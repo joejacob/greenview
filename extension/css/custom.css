@@ -1,0 +1,38 @@
+/* sticker popup */
+.stickerParent {
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.stickerParent > .sticker {
+	display: none;
+}
+
+.stickerParent:hover > .sticker {
+  display: block;
+  z-index: 40;
+  position: absolute;
+  left: 0px;
+  margin-top: 2px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid blue;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: auto;
+}
+
+.stickerContent {
+  margin: 5px;
+}
+
+.nav-tabs {
+  font-size: 10px;
+}
+
+.tr { 
+  font-size: 9px;
+}

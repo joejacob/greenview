@@ -1,0 +1,38 @@
+{
+  "name": "greenview",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Reduces webpage average energy consumption for a more eco-friendly browsing experience",
+  "icons": {
+    "16": "icons/ticker_sticker_1.png",
+    "48": "icons/ticker_sticker_1.png",
+    "128": "icons/ticker_sticker_1.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["js/underscore-1.8.3.min.js",
+                "js/jquery-3.1.0.min.js",
+                "scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title" : "greenview"
+  },
+  "permissions": [
+    "debugger",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*", 
+        "https://*/*"
+      ],
+      "css": ["css/bootstrap.min.css", "css/custom.css"],
+      "js": ["js/jquery-3.1.0.min.js", "js/bootstrap.min.js", "scripts/inject.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,32 +1,29 @@
-TODO:
-- make the ticker box look nicer, better formatting
-- optimize
-- figure out a better way to write html in javascript
-- potentially cache tickers in a database so they can be used for other webpages later
-- have the extension be triggered if the dom has changed
-- turn on and off by clicking the browser action
-- update z-axis of sticker to override any other popups
-	- instead need it to appear on the very top of the page
-- weird as fuck error when scrolling down
-	- https://www.quora.com/What-are-the-differences-between-java-and-ruby-as-well-as-their-web-based-counterparts-namely-JSP-vs-Rails
-- figure out why facebook is fucked up
-	- unsure; temp fix was to block it
-- add full company names
-	- got a list of it
-- add news headlines tab
-	- maybe change color of ticker based on sentiment analysis of news headlines
-	- use the financial news api?
-- actually make a readme
-- fucks up header on youtube
-	- maybe consider have this only work for <body>??
-- reddit comments don't seem to be scanned
-	- are they a part of an iframe or something?
-	
+TODOS:
+- remove large header background images
+- change fonts on page to make sure that they're system fonts
+- maybe if mouse is inactive on page for a while, you can black out the page with a small informative message
+- change color scheme to be more energy efficient
+	- white does not necessarily use more energy than black in all cases
+- halt any gifs that are playing
+	- this could be something where you have to hover over the gif to have it play
+- suspend animations
+- remove ads on the banners
+- notification to update chrome
+- suspend google chrome tabs
+- reminder to remove extensions
+- maybe include tab saver?
+- option to not let chrome run in background
+- enable click-to-play plugins
+- introduce a limit to the number of tabs you can have
+- tips for reducing energy usage i.e. things the extension doesnt have the ability to do
+	- remove excess extensions
+- disable hardware acceleration
 
-DONE:
-- add browser action ability to turn on and off
-	- weirdly still affects facebook so small workaround is to just not let the extension work on FB
-- try to build a ticker check where $, (, and ) are preserved
-- add loading message
-- more informative 'undefined' errors
-- suppress default hover-over ability
+
+MVP:
+- change fonts on page to make sure that they're system fonts
+- maybe if mouse is inactive on page for a while, you can black out (or white out) the page with a small informative message
+- introduce a limit to the number of tabs you can have
+
+Chrome extensions that do similar things:
+- Power Saver by Nate Watson

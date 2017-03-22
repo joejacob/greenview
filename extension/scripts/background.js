@@ -15,6 +15,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 function updateState(tab) {
 	updateIcon();
 	chrome.storage.sync.set({'state': currIcon}, function() {
-		message('Toggled on/off');
+		console.log("Extension toggled " + (currIcon == 1 ? "on" : "off"));
 	});
 }

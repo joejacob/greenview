@@ -1,5 +1,5 @@
 var currIcon = 0;
-//updateState(null);
+updateState(null);
 
 // updates icon image
 function updateIcon() {

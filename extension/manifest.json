@@ -10,10 +10,11 @@
   },
   "default_locale": "en",
   "background": {
-    "scripts": ["js/underscore-1.8.3.min.js",
-                "js/jquery-3.1.0.min.js",
-                "scripts/background.js"],
-    "persistent": false
+    "scripts": [
+      "scripts/background.js",
+      "scripts/fontHandler.js"
+    ],
+    "persistent": true
   },
   "browser_action": {
     "default_title" : "greenview"
@@ -21,6 +22,7 @@
   "permissions": [
     "debugger",
     "storage",
+    "webRequest",
     "http://*/*",
     "https://*/*"
   ],
@@ -32,7 +34,7 @@
       ],
       "css": ["css/custom.css"],
       "js": ["scripts/inject.js"],
-      "run_at": "document_start"
+      "run_at": "document_start"  // begins running once the HMTL has at least started to be parsed. Only guaranteed element is <html>
     }
   ]
 }

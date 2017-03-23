@@ -1,12 +1,7 @@
 TODOS:
 - remove large header background images
-- change fonts on page to make sure that they're system fonts
-- maybe if mouse is inactive on page for a while, you can black out the page with a small informative message
-- change color scheme to be more energy efficient
-	- white does not necessarily use more energy than black in all cases
 - halt any gifs that are playing
 	- this could be something where you have to hover over the gif to have it play
-- suspend animations
 - remove ads on the banners
 - notification to update chrome
 - suspend google chrome tabs
@@ -17,17 +12,17 @@ TODOS:
 - introduce a limit to the number of tabs you can have
 - tips for reducing energy usage i.e. things the extension doesnt have the ability to do
 	- remove excess extensions
-- disable hardware acceleration
 
 
 MVP:
-- change fonts on page to make sure that they're system fonts
-- maybe if mouse is inactive on page for a while, you can black out (or white out) the page with a small informative message
+- suspend tabs
+- suspend animations
+- dont have images load until you see the image
 - introduce a limit to the number of tabs you can have
 
 Chrome extensions that do similar things:
 - Power Saver by Nate Watson
+- The Great Suspender 
 
-
-BUGS:
-- facebook bug remains from tickersticker
+DONE:
+- change fonts on page to make sure that they're system fonts

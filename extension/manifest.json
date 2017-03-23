@@ -11,8 +11,9 @@
   "default_locale": "en",
   "background": {
     "scripts": [
-      "scripts/background.js",
-      "scripts/fontHandler.js"
+      "scripts/fontHandler.js",
+      "scripts/imageHandler.js",
+      "scripts/background.js"
     ],
     "persistent": true
   },

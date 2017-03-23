@@ -18,3 +18,17 @@ function updateState(tab) {
 		console.log("Extension toggled " + (currIcon == 1 ? "on" : "off"));
 	});
 }
+
+// listener for messages from content scripts
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+		console.log(sender.tab ? "message from a content script: " + sender.tab.url : "message from the extension");
+		var valueText;
+		if(request.task == "updateFonts") {
+			valueText = updateFonts();
+		} else if (request.task == "hideImages") {
+			valueText = hideImages();
+		}
+
+		sendResponse({value: valueText});
+	});

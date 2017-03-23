@@ -1,16 +1,19 @@
+// cancels the webrequest
 var updateFontsCallback = function updateFonts(details) {
-	// check if a non-system font is being loaded
-
-	// if a non-system font is being loaded, switch to a default system font
-	// maintain the same size
-	// weight, variant
-	// i think i only need to change the font-family attribute
-	
-	return {};
+	// cancel the request for the webfont
+	return { cancel: true };
 }
-var updateFontsFilter = {urls: ["<all_urls>"]};
-var updateFontsOptExtraInfoSpec = [];
 
+// filters the URLs for webrequests
+var updateFontsFilter = {
+	urls: ["<all_urls>"],
+	types: ["font"]
+};
+
+// allows the function to be blocking
+var updateFontsOptExtraInfoSpec = ["blocking"];
+
+// listener for messages from content scripts
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse) {
 		console.log(sender.tab ? "message from a content script: " + sender.tab.url : "message from the extension");

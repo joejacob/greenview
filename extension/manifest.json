@@ -23,6 +23,7 @@
     "debugger",
     "storage",
     "webRequest",
+    "webRequestBlocking",
     "http://*/*",
     "https://*/*"
   ],

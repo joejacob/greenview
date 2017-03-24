@@ -19,6 +19,7 @@ MVP:
 - suspend animations
 - dont have images load until you see the image
 - introduce a limit to the number of tabs you can have
+- lazily load tabs
 
 Chrome extensions that do similar things:
 - Power Saver by Nate Watson

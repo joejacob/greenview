@@ -35,7 +35,7 @@
         "https://*/*"
       ],
       "css": ["css/custom.css"],
-      "js": ["scripts/inject.js"],
+      "js": ["js/jquery-3.2.0.min.js", "js/jquery.scrollstop.min.js", "js/jquery.lazyload.min.js", "scripts/inject.js"],
       "run_at": "document_start"  // begins running once the HMTL has at least started to be parsed. Only guaranteed element is <html>
     }
   ]

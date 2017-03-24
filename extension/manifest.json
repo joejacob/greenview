@@ -12,7 +12,6 @@
   "background": {
     "scripts": [
       "scripts/fontHandler.js",
-      "scripts/imageHandler.js",
       "scripts/background.js"
     ],
     "persistent": true

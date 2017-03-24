@@ -201,7 +201,7 @@
         } else {
             fold = $(settings.container).offset().top;
         }
-        console.log(element);
+        
         return fold >= $(element).offset().top + settings.threshold  + $(element).height();
     };
 

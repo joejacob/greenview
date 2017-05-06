@@ -4,7 +4,7 @@ updateState(null);
 // updates icon image
 function updateIcon() {
 	currIcon = (currIcon + 1) % 2;
-	chrome.browserAction.setIcon({path: "./../icons/ticker_sticker_" + currIcon + ".png"});
+	chrome.browserAction.setIcon({path: "./../icons/greenview_" + currIcon + ".png"});
 }
 
 // turning extension on and off
@@ -24,11 +24,12 @@ chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse) {
 		console.log(sender.tab ? "message from a content script: " + sender.tab.url : "message from the extension");
 		var valueText;
+
 		if(request.task == "updateFonts") {
 			valueText = updateFonts();
-		} else if (request.task == "hideImages") {
-			valueText = hideImages();
 		}
 
 		sendResponse({value: valueText});
+
+		return true;
 	});

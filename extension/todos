@@ -27,3 +27,4 @@ Chrome extensions that do similar things:
 
 DONE:
 - change fonts on page to make sure that they're system fonts
+- integrated lazy loading of images

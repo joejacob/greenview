@@ -10,5 +10,3 @@ chrome.storage.sync.get('state', function(result) {
 		hideImages();
 	}
 });
-
-

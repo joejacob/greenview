@@ -8,7 +8,6 @@
     "48": "icons/greenview_1.png",
     "128": "icons/greenview_1.png"
   },
-  "default_locale": "en",
   "background": {
     "scripts": [
       "scripts/fontHandler.js",

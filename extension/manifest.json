@@ -26,6 +26,7 @@
     "http://*/*",
     "https://*/*"
   ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "content_scripts": [
     {
       "matches": [
@@ -39,7 +40,7 @@
         "scripts/inject.js", 
         "scripts/imageHandler.js"
       ],
-      "run_at": "document_start"  // begins running once the HMTL has at least started to be parsed. Only guaranteed element is <html>
+      "run_at": "document_start"
     }
   ]
 }

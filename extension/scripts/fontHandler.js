@@ -21,5 +21,5 @@ function updateFonts() {
 		updateFontsOptExtraInfoSpec
 		);
 
-	return "web request font listener was added";
+	return "blocking webfonts";
 }
